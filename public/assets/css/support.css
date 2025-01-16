@@ -1,0 +1,297 @@
+
+    .contact-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+    }
+
+    .contact-info {
+        flex: 1;
+        flex-shrink: 1;
+        flex-shrink: 0;
+        width: 100%;
+        margin: 10px;
+        padding: 40px;
+        background: url('/assets/img/bg-01.svg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        font-family: 'Gilroy-Medium', sans-serif;
+        border-radius: 20px;
+        color: white;
+    }
+
+    .contact-info-body {
+        margin-top: 10px;
+    }
+
+    .contact-info-body .contact-info-body-1 {
+        display: flex;
+        align-items: start;
+        gap: 10px;
+        padding: 20px;
+    }
+
+    .contact-info-body i {
+        margin-right: 10px;
+        margin-top: 5px;
+    }
+
+    .contact-info-body p {
+        margin: 0;
+    }
+
+    .contact-form {
+        flex: 2;
+        margin: 10px;
+        padding: 30px;
+        border-radius: 10px;
+    }
+
+    .contact-form .form-group {
+        margin-bottom: 15px;
+        margin-left: 5px;
+    }
+
+    .contact-form .form-group label {
+        display: block;
+        font-size: 12px;
+        font-weight: 400;
+        margin-bottom: 5px;
+        color: #4DAC51;
+        font-weight: bolder;
+    }
+
+    .contact-form .form-group input{
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        border-bottom: 2px solid gray;
+        box-sizing: border-box;
+        transition: border-color 0.3s;
+    }
+    .contact-form .form-group input::placeholder{
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .contact-form .form-group input:focus {
+    outline: none;
+    border-bottom: 2px solid #28a745;
+}
+
+.contact-form .form-group input.error {
+    border-bottom: 2px solid red;
+}
+
+.contact-form .error-message {
+    display: none;
+    color: red;
+    font-size: 10px;
+    font-weight: 800px;
+    margin-top: 5px;
+    text-align: end;
+}
+
+    /* For small screens */
+    @media (max-width: 768px) {
+        .contact-form .form-group {
+            width: 100%;
+        }
+        .contact-info-body .contact-info-body-1 {
+        flex-wrap: wrap;
+    }
+    .contact-info-body p {
+        word-wrap: break-word; 
+    word-break: break-word; 
+    }
+    
+    }
+
+    .scheduled-container {
+            position: relative;
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .text-container {
+            height: 300px;
+            background-color: white;
+            border-radius: 200px 0 200px 0;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items:center;
+            justify-content: end;
+            margin-left: 240px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-container {
+            position: absolute;
+            top: 55%;
+            left: 0;
+            transform: translateY(-50%);
+            width: 50%;
+            z-index: 99;
+        }
+
+        .image-container .scheduled-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 0 300px 0 0;
+        }
+
+        .text-container .scheduled-text {
+            position: absolute;
+            font-family: 'medel' !important; 
+            word-wrap: break-word; 
+            word-break: break-word; 
+            width: 100%;
+            max-width: 450px;
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: start;
+            
+        }
+        @media (max-width: 970px) {
+    .text-container {
+        margin-left: 0; 
+        padding: 10px; 
+        height: 300px;
+        border-radius: 20px;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .image-container {
+       display: none;
+       width: 0;
+    }
+    .scheduled-text {
+        width: 100%; 
+        padding: 10px !important;
+        font-size: 20px !important;
+        height: auto;
+        word-wrap: break-word; 
+        word-break: break-word; 
+    }
+}
+
+/* Container ensuring cards have the same height */
+.trip-options-section .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.trip-card {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #96c498;
+    background-color: white;
+    min-height: 600px; 
+    border-radius: 20px;
+    padding: 15px; 
+    margin-bottom: 20px; 
+}
+   .section-title {
+    font-size: 30px; 
+    font-family: 'medel' !important; 
+    font-weight: 400; 
+    color: #4DAC51; 
+    text-align: center; 
+    margin: 10px 0; 
+    position: relative; 
+    letter-spacing: 1px;
+}
+
+.section-title::after {
+    content: ''; 
+    display: block; 
+    width: 30%; 
+    height: 4px;
+    background-color: #4DAC51;
+    margin: 16px auto; 
+    border-radius: 2px; 
+}
+.section-sub-title{
+    font-size: 20px; 
+    font-family: 'medel' !important; 
+    font-weight: 400; 
+    text-align: center;
+}
+
+
+/* Hover effects for trip cards */
+.trip-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card-body {
+    animation: fadeIn 1.2s ease-out;
+}
+.trip-card .image-wrapper {
+    position: relative;
+    width: 100%;
+    padding: 15px; 
+}
+
+.card-img-top {
+    border-radius: 15px;
+}
+
+.card-body {
+    padding: 15px; 
+    text-align: center;
+}
+
+.card-title {
+    margin-top: 10px;
+    color: #4DAC51;
+    font-family: 'Medel' !important;
+    font-size: 24px; 
+    font-weight: 400;
+    text-align: center;
+}
+
+.card-text {
+    font-family: 'Gilroy-Medium' !important; 
+    font-size: 20px; 
+    font-weight: 400;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.icon-overlay {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px; 
+}
+

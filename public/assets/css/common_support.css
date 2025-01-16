@@ -1,0 +1,121 @@
+.support_comman {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E0FFE1;
+    padding: 40px 100px;
+    border-radius: 10px;
+    width: 100%;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.faq-section {
+    margin: auto;
+}
+
+.support_comman h2 {
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #4DAC51;
+    text-align: center;
+    font-size: 2em; /* Larger font size */
+}
+
+.faq-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    cursor: help; /* Change to pointer */
+    transition: box-shadow 0.3s, transform 0.3s; 
+}
+
+.faq-item:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px); 
+}
+
+.faq-item h5 {
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #4DAC51;
+    transition: color 0.3s;
+}
+
+.faq-item:hover h5 {
+    color: #388d40; 
+}
+.contact-section {
+    background: url('/assets/img/bg-01.svg') no-repeat center center;
+    background-size: cover; 
+    width: 100%;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-direction: row; 
+    padding: 20px; 
+    gap: 10px; 
+}
+.customer-content {
+    text-align: start;
+    text-transform: capitalize;
+    flex: 1 1 40%;
+    padding: 20px;
+}
+
+.contact-info {
+    flex: 1 1 40%; 
+    padding: 20px; 
+    border-radius: 20px; 
+}
+
+.contact-info-header h2 {
+    text-align: start; 
+    font-size: 24px; 
+    color: white !important;
+    margin-bottom: 15px;
+}
+
+.contact-info-body {
+    margin-top: 10px;
+}
+
+.contact-info-body .contact-info-body-1 {
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+    padding: 10px;
+    justify-content: flex-start; 
+}
+
+.contact-info-body i {
+    margin-right: 10px;
+    color: white; 
+    font-size: 1.2em;
+}
+
+.contact-info-body p {
+    margin-bottom: 0 !important; 
+}
+@media (max-width: 768px) {
+    .support_comman h2 {
+        font-size: 1.5em;
+    }
+    .support_comman{
+        width: 100%;
+        padding: 20px 10px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .faq-item {
+        padding: 15px;
+    }
+}

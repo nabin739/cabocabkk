@@ -1,0 +1,703 @@
+/* General Form Styles */
+.form-container {
+    padding: 10px;
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 80%;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #4DAC51;
+    box-shadow: 0 0 5px rgba(76, 173, 80, 0.5);
+}
+
+.form-label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    margin-bottom: 8px !important;
+}
+
+.form-check-input {
+    width: 20px;
+    height: 20px;
+}
+
+.form-check-input:checked {
+    background-color: #4DAC51;
+    border-color: #4DAC51;
+    box-shadow: none !important;
+}
+
+.form-check-input:focus {
+    box-shadow: 0 0 0 3px rgba(76, 173, 80, 0.5);
+}
+
+/* Tooltip Styles */
+.location-icon::after {
+    font-size: 10px;
+    padding: 8px;
+}
+
+/* Map Styling */
+.map-container {
+    min-height: 300px;
+    height: 400px;
+    max-height: 600px !important;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+#map {
+    height: 100% !important;
+    width: 100% !important;
+    border-radius: 5px;
+}
+
+/* Hover Effects for Icons */
+.location-icon {
+    font-size: 20px;
+    color: #4DAC51;
+    transition: color 0.3s ease;
+}
+
+.location-icon:hover {
+    color: #4DAC51;
+}
+
+.trip-option option:hover {
+    background-color: #4DAC51 !important;
+}
+
+.custom-option {
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 10px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.custom-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 20px;
+    border: 1px solid #f5f5f5;
+    border-radius: 10px;
+    background-color: #000000a3;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.custom-label:hover {
+    background-color: #4DAC51;
+}
+
+.vehicle-image {
+    width: 150px;
+    height: 100px;
+    object-fit: contain;
+}
+
+input[type="radio"]:checked + .custom-label {
+    border: 2px double #4DAC51 !important;
+    background-color: #4DAC51 !important;
+    color: white !important;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.6);
+    padding-top: 60px;
+}
+
+.model-container {
+    background-color: #ffffff;
+    margin: auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    animation: slideIn 0.4s ease-out;
+    position: relative;
+    z-index: 1001;
+}
+
+.routeModal-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.header_msg {
+    flex: 1;
+    font-size: 1.5em;
+    margin: 0;
+    text-align: start;
+}
+
+.close {
+    flex: 1;
+    color: #999;
+    font-size: 24px;
+    text-align: end;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    text-decoration: none;
+}
+
+/* Map */
+.modal-map {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    background-color: #f5f5f5;
+}
+
+/* Route Details */
+.route-info {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.route-details {
+    font-size: 1.1em;
+    color: #444;
+    margin: 10px 0;
+}
+
+/* Button Styles */
+.modal-button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #4DAC51;
+    color: #fff;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modal-button:hover {
+    background-color: #218838;
+}
+
+/* Modal Animation */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.location-icon.active {
+    color: #dc3545;
+    border-bottom: 2px solid #dc3545;
+}
+
+.tab {
+    display: none;
+    min-height: 250px;
+}
+
+.tab.active {
+    display: block;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.form-control option:hover {
+    background-color: #4DAC51 !important;
+}
+
+.option-description {
+    color: gray;
+    font-size: 0.9rem;
+    display: inline;
+    padding: 10px;
+}
+#tab2 i{
+    margin-left: 10px;
+}
+
+
+.icon {
+    margin-right: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: #333;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 20px;
+    }
+
+    .custom-label {
+        width: 100%;
+        max-width: none;
+        flex-direction: column;
+    }
+
+    .vehicle-image {
+        width: 120px;
+        height: 80px;
+    }
+
+    .modal-map {
+        height: 250px;
+    }
+
+    .btn-container {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .form-label {
+        font-size: 14px !important;
+    }
+
+    .custom-label {
+        font-size: 16px;
+    }
+
+    .form-control {
+        max-width: 100%;
+        font-size: 14px;
+    }
+
+    .icon {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+    .btn {
+        padding: 8px 16px;
+    }
+
+    .custom-option {
+        width: 100%;
+        padding: 10px 5px;
+    }
+
+    .modal-button {
+        font-size: 1em;
+    }
+}
+
+.error-message {
+    color: red;
+    font-weight: 1000;
+    font-size: 12px;
+    padding: 0px 4px;
+    text-align: start;
+}
+
+.other_details-main {
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+}
+
+.other_details-in {
+    min-width: 400px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+    padding: 5px 10px;
+}
+
+@media (max-width: 768px) {
+    .other_details-in {
+        min-width: 100%;
+        /* Override min-width for tablets and smaller devices */
+    }
+}
+
+@media (max-width: 576px) {
+    .other_details-in {
+        min-width: 300px;
+        padding: 8px 12px;
+    }
+
+    .vehicle-item {
+        min-width: 300px !important;
+        flex-direction: column !important;
+    }
+
+    .search-container {
+        justify-content: space-between !important;
+    }
+
+    .search-container i {
+        padding-top: 20px !important;
+        padding-left: 5px !important;
+    }
+}
+
+.other_details-in:focus {
+    border: 1px solid #4DAC51;
+    outline: none;
+}
+
+.other_details-in::placeholder {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#vehicle-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.vehicle-item {
+    width: 100%;
+    min-width: 400px;
+    border-radius: 8px;
+    background-color: #000000a3;
+    color: white;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    gap: 10px;
+    border: 2px solid transparent;
+}
+
+#other_details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.vehicle-item:hover {
+    background-color: #E0FFE1;
+    color: #4DAC51;
+    border: 2px solid #4DAC51;
+}
+
+.vehicle-img-details {
+    padding: 10px;
+}
+
+.vehicle-img-details img {
+    width: 120px;
+    height: 80px;
+    margin-bottom: 8px;
+}
+
+.vehicle-name {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.vehicle-details p {
+    margin: 3px 0;
+    width: 100%;
+    word-wrap: break-word;
+    word-break: normal;
+}
+
+/* Ensuring that clicking the label checks the radio button */
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + label {
+    border: 2px solid #4DAC51;
+    background-color: #4DAC51;
+    color: white;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .vehicle-item {
+        max-width: 100%;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .vehicle-name {
+        font-size: 11px;
+    }
+}
+
+/*  */
+.trip-make-one{
+    width: 100%;
+    max-width: 250px;
+}
+
+.main_mc_trip {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.alltrip_type {
+    display: flex;
+    justify-content: space-evenly;
+    padding:20px;
+    width: 100%;
+    max-width: 700px;
+}
+
+.alltrip_type-btn {
+    background-color: #E0FFE1;
+    color: #4DAC51;
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #4DAC51;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#quicktrip {
+    border-radius: 20px 0 0 20px;
+}
+
+#scheduletrip {
+    border-radius: 0 20px 20px 0;
+}
+
+.alltrip_type-btn.selected {
+    background-color: #4DAC51!important;
+    color: white !important;
+    border: 1px solid #4DAC51;
+}
+
+.date-time-fields {
+    width: 100%;
+    padding: 10px 100px;
+}
+
+.date-time-fields label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+}
+
+.main_mc_trip input {
+    max-width: 100% !important;
+}
+.mc_quicktrip{
+    font-size: 14px;
+    font-weight: 800;
+    text-align: center;
+    padding: 10px 50px;
+}
+.main_mc_trip_main {
+    width: 100%;
+    max-width: 700px;
+    /* border: 1px solid rgba(128, 128, 128, 0.397);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  */
+    border-radius: 8px;
+    background-color:Ergba(255, 255, 255, 0.808); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .alltrip_type-btn {
+        font-size: 14px;
+    }
+
+    .date-time-fields {
+        padding: 10px 20px;
+    }
+
+    #quicktrip, #scheduletrip {
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .alltrip_type {
+        flex-direction: column;
+    }
+
+    .alltrip_type-btn {
+        margin-bottom: 10px;
+        border-radius: 20px;
+    }
+
+    #quicktrip {
+        border-radius: 20px;
+    }
+
+    #scheduletrip {
+        border-radius: 20px;
+    }
+
+    .date-time-fields {
+        padding: 20px;
+    }
+}
+.red {
+    color: red !important;
+}
+.timer-container {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    animation: fadeIn 1s;display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.timer-container i {
+    margin-right: 10px;
+    color: #4DAC51; 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+    .set-w {
+        width: 100% !important;
+        max-width: 300px !important;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    /* Loader animation */
+    .search-loader {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        gap: 20px;
+    }
+
+    .new-loader-1 {
+        border: 8px solid #f3f3f3;
+        border-top: 8px solid rgb(37, 158, 37);
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    .search-loader p {
+        margin-top: 10px;
+        font-size: 16px;
+        color: #555;
+    }
+
+    /* HTML: <div class="loader"></div> */
+    .new-loader {
+        width: fit-content;
+        font-weight: bold;
+        font-family: monospace;
+        font-size: 20px;
+        color: #0000;
+        background: linear-gradient(90deg, #000 calc(50% - 0.5ch), #C02942 0 calc(50% + 0.5ch), #000 0) right/calc(200% + 1ch) 100%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        animation: l8 2s infinite steps(11);
+    }
+
+    .new-loader:before {
+        content: "Searching for drivers..."
+    }
+
+    @keyframes l8 {
+        to {
+            background-position: left
+        }
+    }
